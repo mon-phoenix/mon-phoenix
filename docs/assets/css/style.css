@@ -1,0 +1,59 @@
+body {
+	font-family: 'Quicksand', 'HarmonyOS Sans SC', PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important;
+	font-size: 17px;
+}
+
+
+/**标题颜色**/
+
+.md-typeset h1 {
+    text-align: center;
+    color: #e92063;
+    font-weight: bold;
+}
+
+.md-typeset h2 {
+    font-weight: bold;
+}
+
+.md-typeset h3 {
+    font-weight: bold;
+}
+
+.md-typeset h4 {
+    font-weight: bold;
+}
+
+.md-typeset h5 {
+    font-weight: bold;
+}
+
+/**图片居中和圆角**/
+
+.md-typeset img, .md-typeset svg, .md-typeset video {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.md-typeset img, .md-typeset svg, .md-typeset video {
+    max-width: 100%;
+}
+
+/**行高和字符间距**/
+
+.md-typeset {
+    line-height: 1.69;
+    letter-spacing: 1px;
+}
+
+/**转换挖空**/
+
+.md-typeset mark {
+    color: transparent;
+}
+
+.md-typeset mark:hover {
+  color: var(--text-highlight) !important;
+}
