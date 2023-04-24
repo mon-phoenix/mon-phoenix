@@ -1,23 +1,32 @@
 site_name: Mon-Phoenix
 
 theme:
-    name: 'material'
-    palette:
+  name: material
+  custom_dir: theme
+  logo: img/logo.bmp
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
 
+  palette:
     # Light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
-      primary: pink
-      accent: indigo
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
     # Dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
-      primary: black
-      accent: blue
+      primary: blue grey
+      accent: light blue
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
