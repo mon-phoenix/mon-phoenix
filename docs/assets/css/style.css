@@ -7,8 +7,6 @@ body {
 /**标题颜色**/
 
 .md-typeset h1 {
-    text-align: center;
-    color: #5d8a9e;
     font-weight: bold;
 }
 
@@ -35,6 +33,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 .md-typeset img, .md-typeset svg, .md-typeset video {
@@ -48,12 +47,53 @@ body {
     letter-spacing: 1px;
 }
 
+.md-typeset ol li, .md-typeset ul li {
+    margin-bottom: 0.25em;
+}
+
 /**转换挖空**/
 
 .md-typeset mark {
-    color: transparent;
+  color: transparent;
+  background-image:linear-gradient(to right, #ffafbd,#ffc3a0);
+  border-radius: 5px;
+  padding: 1px 2px;
+  margin: 0px 2px;
 }
 
 .md-typeset mark:hover {
-  color: var(--text-highlight) !important;
+  color: black !important;
+  background-image:linear-gradient(to right, #ffafbd,#ffc3a0);
+  border-radius: 5px;
+  padding: 1px 2px;
+  margin: 0px 2px;
+}
+
+/**引用框美化**/
+/*
+.md-typeset blockquote {
+    color: #000000;
+    padding: 1px 15px;
+    border-left: 6px solid #546d78!important;
+    background-image: linear-gradient(to right, #d3cce3,#e9e4f0);
+    border-radius: 10px;
+}*/
+.md-typeset blockquote {
+    border: 3px solid #bde4d47a;
+    background-color: transparent;
+    border-radius: 0.4375em;
+}
+
+[dir=ltr] .md-typeset blockquote {
+    border-left: 3px solid #bde4d47a;
+}
+
+/**表格框线**/
+
+.md-typeset table:not([class]) td:not([align]), .md-typeset table:not([class]) th:not([align]) {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
 }
