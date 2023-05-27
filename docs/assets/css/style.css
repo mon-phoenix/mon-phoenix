@@ -6,6 +6,10 @@
     font-display: swap;
 }
 
+body {
+    font-family: 'LXGW ZhenKai', PingFang SC,HarmonyOS_Regular,Helvetica Neue,Microsoft YaHei,sans-serif !important;
+}
+
 /**标题颜色**/
 
 .md-typeset h1 {
